@@ -1,0 +1,46 @@
+name: Automatically refresh the events calendar
+on:
+    workflow_dispatch:
+jobs:
+  refresh-events-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup Ruby 
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+      
+      - name: Fetch new events
+        run: bundle exec ruby main.rb
+
+      - name: Show git diff
+        run: git diff 
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
+      - name: Commit and push changes
+        run: |
+          echo "Branch name is ${{ steps.extract_branch.outputs.branch }}"
+          if ! git diff --quiet db.json; then
+              git config --local user.email "automation@bustikiller.com"
+              git config --local user.name "Automation user"
+              git add db.json events.ical
+              git commit -m "Automated update of events on $(date)"
+          else
+              echo "No changes in db.json. Exiting without committing."
+          fi
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.extract_branch.outputs.branch }}
