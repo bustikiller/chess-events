@@ -43,7 +43,7 @@ JSON.parse(File.read('db.json')).each_value do |event|
       e.dtstamp = Icalendar::Values::DateTime.new(Time.parse(event['updatedAt']))
       e.summary = stream['title']
       e.description = "Day #{i + 1} of #{event['name']}"
-      e.url = StreamUrlBuilder.build(stream['type'], stream['channel'])
+      e.url = e.location = StreamUrlBuilder.build(stream['type'], stream['channel'])
     end
   end
 end
