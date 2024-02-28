@@ -3,6 +3,7 @@ require 'pry'
 require 'icalendar'
 
 require_relative './fetcher'
+require_relative './stream_url_builder'
 
 File.write('db.json', '{}') unless File.exist?('db.json')
 local_db = JSON.parse(File.read('db.json'))
@@ -24,7 +25,7 @@ local_db.each_value do |event|
       e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']))
       e.summary = stream['title']
       e.description = "Day #{i + 1} of #{event['name']}"
-      e.location = stream['type']
+      e.location = StreamUrlBuilder.build(stream['type'], stream['channel'])
     end
   end
 end
