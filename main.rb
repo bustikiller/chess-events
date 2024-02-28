@@ -15,6 +15,8 @@ File.write('db.json', local_db.to_json)
 
 cal = Icalendar::Calendar.new
 
+cal.refresh_interval = 'DURATION:PT12H'
+
 local_db.each_value do |event|
   event['streams']&.each_with_index do |stream, i|
     cal.event do |e|
