@@ -33,6 +33,8 @@ cal.refresh_interval = 'DURATION:PT12H'
 
 local_db.each_value do |event|
   event['streams']&.each_with_index do |stream, i|
+    next unless stream.dig('language', 'locale').start_with?('en_')
+
     cal.event do |e|
       e.uid = Digest::UUID.uuid_v5(UUID_NAMESPACE, event['uuid'] + i.to_s)
       e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']))
