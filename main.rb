@@ -28,7 +28,7 @@ cal.refresh_interval = 'DURATION:PT12H'
 local_db.each_value do |event|
   event['streams']&.each_with_index do |stream, i|
     cal.event do |e|
-      e.uid = event['uuid']
+      e.uid = Digest::UUID.uuid_v5(UUID_NAMESPACE, event['uuid'] + i.to_s)
       e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']))
       e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']))
       e.summary = stream['title']
