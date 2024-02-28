@@ -1,6 +1,8 @@
 name: Automatically refresh the events calendar
 on:
     workflow_dispatch:
+    schedule:
+      - cron:  '0 0 * * *'
 jobs:
   refresh-events-calendar:
     runs-on: ubuntu-latest
