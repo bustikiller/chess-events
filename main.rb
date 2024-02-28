@@ -9,6 +9,7 @@ require_relative './fetcher'
 require_relative './stream_url_builder'
 
 UUID_NAMESPACE = '98aacae8-1521-434e-8f29-a619b963de2c'
+TZID = 'UTC'
 
 File.write('db.json', '{}') unless File.exist?('db.json')
 local_db = JSON.parse(File.read('db.json'))
@@ -37,12 +38,12 @@ JSON.parse(File.read('db.json')).each_value do |event|
 
     cal.event do |e|
       e.uid = Digest::UUID.uuid_v5(UUID_NAMESPACE, event['uuid'] + i.to_s)
-      e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']))
-      e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']))
+      e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']), 'tzid' => TZID)
+      e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']), 'tzid' => TZID)
       e.dtstamp = Icalendar::Values::DateTime.new(Time.parse(event['updatedAt']))
       e.summary = stream['title']
       e.description = "Day #{i + 1} of #{event['name']}"
-      e.location = StreamUrlBuilder.build(stream['type'], stream['channel'])
+      e.url = StreamUrlBuilder.build(stream['type'], stream['channel'])
     end
   end
 end
