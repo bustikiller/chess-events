@@ -31,7 +31,7 @@ cal = Icalendar::Calendar.new
 
 cal.refresh_interval = 'DURATION:PT12H'
 
-local_db.each_value do |event|
+JSON.parse(File.read('db.json')).each_value do |event|
   event['streams']&.each_with_index do |stream, i|
     next unless stream.dig('language', 'locale').start_with?('en_')
 
@@ -39,7 +39,7 @@ local_db.each_value do |event|
       e.uid = Digest::UUID.uuid_v5(UUID_NAMESPACE, event['uuid'] + i.to_s)
       e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']))
       e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']))
-      e.dtstamp = Icalendar::Values::DateTime.new(event['updatedAt'])
+      e.dtstamp = Icalendar::Values::DateTime.new(Time.parse(event['updatedAt']))
       e.summary = stream['title']
       e.description = "Day #{i + 1} of #{event['name']}"
       e.location = StreamUrlBuilder.build(stream['type'], stream['channel'])
