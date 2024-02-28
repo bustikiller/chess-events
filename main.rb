@@ -16,7 +16,13 @@ local_db = JSON.parse(File.read('db.json'))
 Fetcher.new.fetch.each_with_object(local_db) do |event, db|
   uuid = Digest::UUID.uuid_v5(UUID_NAMESPACE, event['id'].to_s)
 
-  db[event['id'].to_s] = event.merge('uuid' => uuid)
+  db_event = db[event['id'].to_s]
+  changed = db_event.nil? || db_event['updatedAt'].nil? || db_event.except('updatedAt', 'uuid') != event
+
+  db[event['id'].to_s] = event.merge(
+    'uuid' => uuid,
+    'updatedAt' => (changed ? Time.now.utc : Time.parse(db_event['updatedAt']))
+  )
 end
 
 File.write('db.json', local_db.to_json)
@@ -31,6 +37,7 @@ local_db.each_value do |event|
       e.uid = event['uuid']
       e.dtstart = Icalendar::Values::DateTime.new(Time.parse(stream['startAt']))
       e.dtend = Icalendar::Values::DateTime.new(Time.parse(stream['endAt']))
+      e.dtstamp = Icalendar::Values::DateTime.new(event['updatedAt'])
       e.summary = stream['title']
       e.description = "Day #{i + 1} of #{event['name']}"
       e.location = StreamUrlBuilder.build(stream['type'], stream['channel'])
