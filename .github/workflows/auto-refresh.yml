@@ -32,7 +32,7 @@ jobs:
       - name: Commit and push changes
         run: |
           echo "Branch name is ${{ steps.extract_branch.outputs.branch }}"
-          if ! git diff --quiet db.json; then
+          if ! git diff --quiet db.json events.ical; then
               git config --local user.email "automation@bustikiller.com"
               git config --local user.name "Automation user"
               git add db.json events.ical
