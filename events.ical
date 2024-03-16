@@ -99,4 +99,14 @@ LOCATION:https://kick.com/gmhikaru
 SUMMARY:GM Hikaru Bundesliga Coverage!
 URL;VALUE=URI:https://kick.com/gmhikaru
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240316T001238
+UID:03b1f9a0-b1f0-5147-8a23-5703177ae5a0
+DTSTART:20240315T150000Z
+DTEND:20240315T193000Z
+DESCRIPTION:Day 1 of Reykjavik Open 2024
+LOCATION:https://www.youtube.com/channel/5PH2VVJ5Zng
+SUMMARY:Reykjavik Open Coverage
+URL;VALUE=URI:https://www.youtube.com/channel/5PH2VVJ5Zng
+END:VEVENT
 END:VCALENDAR
