@@ -80,27 +80,27 @@ SUMMARY:FINAL: Fabiano/Cristian v. Naroditsky/Hess! Will Podcasters Sink Th
 URL;VALUE=URI:https://www.twitch.tv/Chess
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240314T001306
+DTSTAMP:20240317T001443
 UID:adf68ccf-26eb-5f44-a1cf-9cb7639906e7
-DTSTART:20240224T130000Z
-DTEND:20240224T190000Z
+DTSTART:20240316T130000Z
+DTEND:20240316T230000Z
 DESCRIPTION:Day 1 of German Chess Bundesliga 2023-2024
-LOCATION:https://kick.com/GMHikaru
-SUMMARY:GM Hikaru Bundesliga Coverage!
-URL;VALUE=URI:https://kick.com/GMHikaru
+LOCATION:https://www.youtube.com/channel/QcSKZDqSEHA
+SUMMARY:Kommentierung der Vierheimer Partien mit GM Ilja Zaragatski
+URL;VALUE=URI:https://www.youtube.com/channel/QcSKZDqSEHA
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240314T001306
-UID:104483be-528f-5269-9dbd-9f97f863ee3e
-DTSTART:20240225T090000Z
-DTEND:20240225T160000Z
-DESCRIPTION:Day 4 of German Chess Bundesliga 2023-2024
-LOCATION:https://kick.com/gmhikaru
-SUMMARY:GM Hikaru Bundesliga Coverage!
-URL;VALUE=URI:https://kick.com/gmhikaru
+DTSTAMP:20240317T001443
+UID:767cec6f-af8d-53ca-83da-784cd28b23b5
+DTSTART:20240317T090000Z
+DTEND:20240317T190000Z
+DESCRIPTION:Day 2 of German Chess Bundesliga 2023-2024
+LOCATION:https://www.youtube.com/channel/dcL1rwnTfuA
+SUMMARY:Kommentierung der Vierheimer Partien mit GM Ilja Zaragatski
+URL;VALUE=URI:https://www.youtube.com/channel/dcL1rwnTfuA
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240316T001238
+DTSTAMP:20240317T001443
 UID:03b1f9a0-b1f0-5147-8a23-5703177ae5a0
 DTSTART:20240315T150000Z
 DTEND:20240315T193000Z
