@@ -179,4 +179,14 @@ LOCATION:https://www.twitch.tv/botezlive
 SUMMARY:Sunway Formentera Chess Festival
 URL;VALUE=URI:https://www.twitch.tv/botezlive
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240420T001331
+UID:4c2eff39-a699-5a20-85f9-925e58466c7f
+DTSTART:20240419T132500Z
+DTEND:20240420T050000Z
+DESCRIPTION:Day 1 of European Women’s Chess Championship 2024
+LOCATION:https://www.youtube.com/channel/Qo3A420gXUo
+SUMMARY:European Women's Chess Championship 2024 - Round 1 LIVE!
+URL;VALUE=URI:https://www.youtube.com/channel/Qo3A420gXUo
+END:VEVENT
 END:VCALENDAR
