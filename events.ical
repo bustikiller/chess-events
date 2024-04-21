@@ -180,7 +180,7 @@ SUMMARY:Sunway Formentera Chess Festival
 URL;VALUE=URI:https://www.twitch.tv/botezlive
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240420T001331
+DTSTAMP:20240421T001458
 UID:4c2eff39-a699-5a20-85f9-925e58466c7f
 DTSTART:20240419T132500Z
 DTEND:20240420T050000Z
@@ -188,5 +188,25 @@ DESCRIPTION:Day 1 of European Women’s Chess Championship 2024
 LOCATION:https://www.youtube.com/channel/Qo3A420gXUo
 SUMMARY:European Women's Chess Championship 2024 - Round 1 LIVE!
 URL;VALUE=URI:https://www.youtube.com/channel/Qo3A420gXUo
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240421T001458
+UID:9c976ba7-9682-56af-9d10-48fba5b4234d
+DTSTART:20240420T123000Z
+DTEND:20240421T050000Z
+DESCRIPTION:Day 2 of European Women’s Chess Championship 2024
+LOCATION:https://www.youtube.com/channel/e9UvwLCrgBk
+SUMMARY:European Women's Chess Championship 2024 - Round 2 LIVE!
+URL;VALUE=URI:https://www.youtube.com/channel/e9UvwLCrgBk
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240421T001458
+UID:8522d892-c7dc-5c24-823a-3edfd4634d79
+DTSTART:20240421T123000Z
+DTEND:20240422T050000Z
+DESCRIPTION:Day 3 of European Women’s Chess Championship 2024
+LOCATION:https://www.youtube.com/channel/c8ALRWmped0
+SUMMARY:European Women's Chess Championship 2024 - Round 3 LIVE!
+URL;VALUE=URI:https://www.youtube.com/channel/c8ALRWmped0
 END:VEVENT
 END:VCALENDAR
