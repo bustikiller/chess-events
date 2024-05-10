@@ -490,13 +490,13 @@ SUMMARY:Sardinia World Chess Festival Coverage
 URL;VALUE=URI:https://www.youtube.com/channel/QGvbNrBbWUQ
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240509T001402
+DTSTAMP:20240510T001408
 UID:517acc63-cb40-50b7-a914-e56a16f1f59f
-DTSTART:20240508T110000Z
-DTEND:20240508T160000Z
+DTSTART:20240509T110000Z
+DTEND:20240509T160000Z
 DESCRIPTION:Day 1 of Grand Chess Tour: Superbet Poland Rapid & Blitz 2024
-LOCATION:https://www.youtube.com/channel/zwyH9MGJ-cg
+LOCATION:https://www.youtube.com/channel/83PHZgkNsxc
 SUMMARY:Grand Chess Tour: Superbet Poland Rapid & Blitz Coverage
-URL;VALUE=URI:https://www.youtube.com/channel/zwyH9MGJ-cg
+URL;VALUE=URI:https://www.youtube.com/channel/83PHZgkNsxc
 END:VEVENT
 END:VCALENDAR
