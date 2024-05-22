@@ -499,4 +499,14 @@ LOCATION:https://www.youtube.com/channel/3gEmfIVPllo
 SUMMARY:Grand Chess Tour: Superbet Poland Rapid & Blitz Coverage
 URL;VALUE=URI:https://www.youtube.com/channel/3gEmfIVPllo
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240522T001351
+UID:e25d7e76-960d-50b2-b1fc-f817a9bbe470
+DTSTART:20240522T195000Z
+DTEND:20240523T000000Z
+DESCRIPTION:Day 1 of BlitzChamps III
+LOCATION:https://www.twitch.tv/Chess
+SUMMARY:BlitzChamps III
+URL;VALUE=URI:https://www.twitch.tv/Chess
+END:VEVENT
 END:VCALENDAR
