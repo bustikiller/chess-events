@@ -500,10 +500,10 @@ SUMMARY:Grand Chess Tour: Superbet Poland Rapid & Blitz Coverage
 URL;VALUE=URI:https://www.youtube.com/channel/3gEmfIVPllo
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240523T001402
+DTSTAMP:20240524T001437
 UID:e25d7e76-960d-50b2-b1fc-f817a9bbe470
 DTSTART:20240522T195000Z
-DTEND:20240523T000000Z
+DTEND:20240522T231500Z
 DESCRIPTION:Day 1 of BlitzChamps III
 LOCATION:https://www.twitch.tv/Chess
 SUMMARY:Will They Touchdown Or Punt On The Chess Board? ft. NFL Legends Lar
