@@ -510,4 +510,14 @@ SUMMARY:Will They Touchdown Or Punt On The Chess Board? ft. NFL Legends Lar
  ry Fitzgerald\, Kyler\, Drue\, Chidobe & More | BlitzChamps III 2024
 URL;VALUE=URI:https://www.twitch.tv/Chess
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240608T001505
+UID:05240f5a-0dd2-510f-95d9-49e50170fd2d
+DTSTART:20240607T150000Z
+DTEND:20240607T230000Z
+DESCRIPTION:Day 2 of Clash of Claims 2024
+LOCATION:https://www.twitch.tv/gothamchess
+SUMMARY:Clash of Claims
+URL;VALUE=URI:https://www.twitch.tv/gothamchess
+END:VEVENT
 END:VCALENDAR
