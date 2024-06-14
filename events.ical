@@ -620,4 +620,14 @@ LOCATION:https://www.twitch.tv/botezlive
 SUMMARY:Tournament Coverage
 URL;VALUE=URI:https://www.twitch.tv/botezlive
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240614T001424
+UID:7877b92e-ba62-5c19-8751-41ca5a21090e
+DTSTART:20240613T183000Z
+DTEND:20240614T013000Z
+DESCRIPTION:Day 1 of Cairns Cup 2024
+LOCATION:https://www.youtube.com/channel/3nszv_-V12g
+SUMMARY:Cairns Cup
+URL;VALUE=URI:https://www.youtube.com/channel/3nszv_-V12g
+END:VEVENT
 END:VCALENDAR
