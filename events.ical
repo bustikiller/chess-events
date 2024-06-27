@@ -680,4 +680,14 @@ LOCATION:https://www.twitch.tv/stlchessclub
 SUMMARY:Cairns Cup Round 9
 URL;VALUE=URI:https://www.twitch.tv/stlchessclub
 END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20240627T001443
+UID:1f9ef54a-658c-55c8-b4f0-7a5006c221d3
+DTSTART:20240626T122000Z
+DTEND:20240626T180000Z
+DESCRIPTION:Day 1 of Grand Chess Tour: Superbet Romania Chess Classic 2024
+LOCATION:https://www.youtube.com/channel/dQCRWUp0ZOM
+SUMMARY:Superbet Romania Chess Classic
+URL;VALUE=URI:https://www.youtube.com/channel/dQCRWUp0ZOM
+END:VEVENT
 END:VCALENDAR
