@@ -791,14 +791,14 @@ SUMMARY:Leon Masters Final
 URL;VALUE=URI:https://www.youtube.com/channel/7OU6K7wD4Qo
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20240714T001704
+DTSTAMP:20240715T001549
 UID:b6005d92-34bf-5b09-b107-11220d49a401
-DTSTART:20240713T130000Z
-DTEND:20240713T180000Z
+DTSTART:20240714T120000Z
+DTEND:20240714T170000Z
 DESCRIPTION:Day 1 of Grand Chess Tour: SuperUnited Croatia Rapid & Blitz 20
  24
-LOCATION:https://www.youtube.com/channel/62ib2mijbCY
+LOCATION:https://www.youtube.com/channel/PI_lUhn7cQA
 SUMMARY:SuperUnited Rapid & Blitz Croatia
-URL;VALUE=URI:https://www.youtube.com/channel/62ib2mijbCY
+URL;VALUE=URI:https://www.youtube.com/channel/PI_lUhn7cQA
 END:VEVENT
 END:VCALENDAR
